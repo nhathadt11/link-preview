@@ -35,6 +35,6 @@ const display = (content) => {
 }
 
 const setError = (error) => {
-  document.getElementById('error').innerText = error
+  document.getElementById('error').innerText = error === undefined ? '' : error
   setLoading(false)
 }
