@@ -6,7 +6,7 @@ window.document.addEventListener('DOMContentLoaded', () => {
       setLoading(true)
 
       const targetUrl = document.getElementById('targetUrl').value
-      fetch(`http://localhost:8080/api/lookup?q=${targetUrl}`)
+      fetch(`/api/lookup?q=${targetUrl}`)
         .then(res => res.json())
         .then(json => {
           setLoading(false)
